@@ -15,8 +15,9 @@ int main()
 		{"KO sds", 2.2, 342},
 		{"dsa", 65.3, 3254}
 	};
-	cout << snack[0].name + "\n" << snack[1].weight << endl
-		<< snack[2].calories;
+	cout << snack[0].name + "\n" 
+		 << snack[1].weight << endl
+		 << snack[2].calories;
 }
 
 // 运行程序: Ctrl + F5 或调试 >“开始执行(不调试)”菜单
