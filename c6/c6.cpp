@@ -1,26 +1,22 @@
-﻿// c4-1.cpp : 此文件包含 "main" 函数。程序执行将在此处开始并结束。
-//
-
-#include <iostream>
+﻿#include <iostream>
 #include<string>
 using namespace std;
 
+struct candyBar {
+	string name;
+	double weight;
+	int calories;
+};
+
 int main()
 {
-	string Fname, Lname;
-	cout << "What is your first name?";
-	getline(cin, Fname);
-	cout << "What is your last name?";
-	getline(cin, Lname);
-	cout << "What letter grade do you deserve?";
-	char grade;
-	cin >> grade;
-	cout << "What is your age?";
-	int age;
-	cin >> age;
-	cout << "Name: " << Lname << ',' << Fname << endl
-		<< "Grade: " << char(grade + 1) << endl
-		<< "Age: " << age;
+	candyBar snack[3] = {
+		{"Mocha Munch", 2.3, 350},
+		{"KO sds", 2.2, 342},
+		{"dsa", 65.3, 3254}
+	};
+	cout << snack[0].name + "\n" << snack[1].weight << endl
+		<< snack[2].calories;
 }
 
 // 运行程序: Ctrl + F5 或调试 >“开始执行(不调试)”菜单

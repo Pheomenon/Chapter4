@@ -1,26 +1,18 @@
-﻿// c4-1.cpp : 此文件包含 "main" 函数。程序执行将在此处开始并结束。
-//
-
+﻿
 #include <iostream>
-#include<string>
+#include<cstring>
 using namespace std;
 
 int main()
 {
-	string Fname, Lname;
-	cout << "What is your first name?";
-	getline(cin, Fname);
-	cout << "What is your last name?";
-	getline(cin, Lname);
-	cout << "What letter grade do you deserve?";
-	char grade;
-	cin >> grade;
-	cout << "What is your age?";
-	int age;
-	cin >> age;
-	cout << "Name: " << Lname << ',' << Fname << endl
-		<< "Grade: " << char(grade + 1) << endl
-		<< "Age: " << age;
+	const int size = 15;
+	char Lname[size], Fname[size];
+	cout << "Enter your first name:";
+	cin >> Fname;
+	cout << "Enter your last name:";
+	cin >> Lname;
+	cout << "Here's the information in a single string: ";
+	cout << Lname << ", " << Fname;
 }
 
 // 运行程序: Ctrl + F5 或调试 >“开始执行(不调试)”菜单
